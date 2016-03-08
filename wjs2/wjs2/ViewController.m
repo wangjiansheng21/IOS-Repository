@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property(nonatomic,assign)CGFloat height;
 @end
 
 @implementation ViewController
