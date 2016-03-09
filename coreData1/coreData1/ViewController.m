@@ -32,10 +32,12 @@ static NSString *const kLineEntityName=@"Line";
     for(NSManagedObject *temp in  objects){
         int lineNum;
     }
-    
+//    [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(enterBackGround) name: object:nil];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
+-(void)enterBackGround{
+    
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

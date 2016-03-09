@@ -31,11 +31,10 @@ MyModel *myModel;
 }
 -(void)show:(NSNotification *)notifi{
     CGFloat res=[[notifi.userInfo objectForKey:@"accumulator"] floatValue];
-    NSString *title=notifi.userInfo[title];
-    if(res==0){
-        _myView.text=@"";
-        return;
-    }
+//    if(res==0){
+//        _myView.text=@"";
+//        return;
+//    }
     
     _myView.text= [[notifi.userInfo objectForKey:@"accumulator"] description];
 }
