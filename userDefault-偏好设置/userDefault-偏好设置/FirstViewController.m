@@ -27,7 +27,10 @@
 -(void)refrashTextField{
     NSUserDefaults *defaults=[NSUserDefaults standardUserDefaults];
     self.labOffer.text=[defaults objectForKey:OFFICER];
+     self.labCode.text=[defaults objectForKey:CODE];
     self.labRank.text=[defaults objectForKey:RANK];
+    self.labEngine.text=[@([defaults boolForKey:ENGINE]) description];
+    self.labWrap.text=[@([defaults floatForKey:WRAP]) description];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

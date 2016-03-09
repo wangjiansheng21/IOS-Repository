@@ -16,7 +16,7 @@
 		859014B91C8EB15500B60132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 859014B71C8EB15500B60132 /* LaunchScreen.storyboard */; };
 		859014C41C8EB15500B60132 /* userDefault_____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 859014C31C8EB15500B60132 /* userDefault_____Tests.m */; };
 		859014CF1C8EB15500B60132 /* userDefault_____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 859014CE1C8EB15500B60132 /* userDefault_____UITests.m */; };
-		859014DD1C8EB1B900B60132 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 859014DC1C8EB1B900B60132 /* Settings.bundle */; };
+		CDEC9E571C8EE90200204017 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CDEC9E561C8EE90200204017 /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +55,8 @@
 		859014CA1C8EB15500B60132 /* userDefault-偏好设置UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "userDefault-偏好设置UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		859014CE1C8EB15500B60132 /* userDefault_____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "userDefault_____UITests.m"; sourceTree = "<group>"; };
 		859014D01C8EB15500B60132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		859014DC1C8EB1B900B60132 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		859014DE1C8EBD2D00B60132 /* Constraints.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constraints.h; sourceTree = "<group>"; };
+		CDEC9E561C8EE90200204017 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +119,7 @@
 				859014B71C8EB15500B60132 /* LaunchScreen.storyboard */,
 				859014BA1C8EB15500B60132 /* Info.plist */,
 				859014A61C8EB15500B60132 /* Supporting Files */,
-				859014DC1C8EB1B900B60132 /* Settings.bundle */,
+				CDEC9E561C8EE90200204017 /* Settings.bundle */,
 			);
 			path = "userDefault-偏好设置";
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				859014DD1C8EB1B900B60132 /* Settings.bundle in Resources */,
+				CDEC9E571C8EE90200204017 /* Settings.bundle in Resources */,
 				859014B91C8EB15500B60132 /* LaunchScreen.storyboard in Resources */,
 				859014B61C8EB15500B60132 /* Assets.xcassets in Resources */,
 				859014B41C8EB15500B60132 /* Main.storyboard in Resources */,
@@ -508,6 +508,7 @@
 				859014D51C8EB15500B60132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859014D61C8EB15500B60132 /* Build configuration list for PBXNativeTarget "userDefault-偏好设置Tests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +517,7 @@
 				859014D81C8EB15500B60132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		859014D91C8EB15500B60132 /* Build configuration list for PBXNativeTarget "userDefault-偏好设置UITests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +526,7 @@
 				859014DB1C8EB15500B60132 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

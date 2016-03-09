@@ -8,19 +8,6 @@
 	<array>
 		<dict>
 			<key>Type</key>
-<<<<<<< HEAD
-			<string>PSTextFieldSpecifier</string>
-			<key>Title</key>
-			<string>指挥官</string>
-			<key>Key</key>
-			<string>offer</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>通用信息</string>
-=======
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
 			<string>通用信息</string>
@@ -40,7 +27,6 @@
 			<string>Alphabet</string>
 			<key>AutocorrectionType</key>
 			<string>No</string>
->>>>>>> origin/master
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -49,8 +35,6 @@
 			<string>授权码</string>
 			<key>Key</key>
 			<string>code</string>
-<<<<<<< HEAD
-=======
 			<key>DefaultValue</key>
 			<string></string>
 			<key>IsSecure</key>
@@ -59,7 +43,6 @@
 			<string>Alphabet</string>
 			<key>AutocorrectionType</key>
 			<string>No</string>
->>>>>>> origin/master
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -69,62 +52,26 @@
 			<key>Key</key>
 			<string>rank</string>
 			<key>DefaultValue</key>
-<<<<<<< HEAD
-			<string>少尉</string>
-			<key>Titles</key>
-			<array>
-				<string>少尉</string>
-				<string>中尉</string>
-				<string>少校</string>
-				<string>中校</string>
-				<string>上校</string>
-				<string>准将</string>
-			</array>
+			<string></string>
 			<key>Values</key>
 			<array>
-				<string>jason</string>
-				<string>Bob</string>
-				<string>David</string>
-				<string>Marry</string>
-				<string>Mike</string>
-				<string>Haili</string>
-=======
-			<string></string>
-			<key>Titles</key>
-			<array>
-				<string></string>
 				<string>上尉</string>
 				<string>中尉</string>
 				<string>上将</string>
 				<string>中将</string>
 				<string>少尉</string>
 				<string>少校</string>
->>>>>>> origin/master
 			</array>
 		</dict>
 		<dict>
 			<key>Type</key>
 			<string>PSToggleSwitchSpecifier</string>
 			<key>Title</key>
-<<<<<<< HEAD
-			<string>曲速引擎</string>
-			<key>Key</key>
-			<string>engine</string>
-			<key>DefaultValue</key>
-			<true/>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>曲速系数</string>
-=======
 			<string>曲速引擎开</string>
 			<key>Key</key>
 			<string>engine</string>
 			<key>DefaultValue</key>
 			<false/>
->>>>>>> origin/master
 		</dict>
 		<dict>
 			<key>Type</key>
@@ -132,31 +79,23 @@
 			<key>Key</key>
 			<string>wrap</string>
 			<key>DefaultValue</key>
-			<integer>5</integer>
+			<real>0.5</real>
 			<key>MinimumValue</key>
 			<integer>0</integer>
 			<key>MaximumValue</key>
-			<integer>10</integer>
+			<integer>1</integer>
+			<key>MinimumValueImage</key>
+			<string></string>
+			<key>MaximumValueImage</key>
+			<string></string>
 		</dict>
 		<dict>
 			<key>Type</key>
-<<<<<<< HEAD
-			<string>PSGroupSpecifier</string>
-			<key>Title</key>
-			<string>其他信息</string>
-		</dict>
-		<dict>
-			<key>Type</key>
-			<string>PSChildPaneSpecifier</string>
-			<key>Title</key>
-			<string>更多设置</string>
-=======
 			<string>PSChildPaneSpecifier</string>
 			<key>Title</key>
 			<string>更多信息</string>
->>>>>>> origin/master
 			<key>File</key>
-			<string>more</string>
+			<string></string>
 		</dict>
 	</array>
 </dict>
