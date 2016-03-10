@@ -30,9 +30,9 @@
         [self dataLists];
         tableView.dataSource=self;
         tableView.delegate=self;
-//        tableView.rowHeight=80;
+
         self.layer.borderWidth=1;
-//        self.layer.borderColor= [[UIColor colorWithWhite:1000 alpha:0.5] CGColor];
+        self.layer.borderColor= [[UIColor blueColor]CGColor];
         [self addSubview:tableView];
       
         tableView.backgroundColor=[UIColor clearColor];
