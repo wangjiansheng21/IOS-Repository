@@ -26,18 +26,18 @@
             </objects>
             <point key="canvasLocation" x="-96" y="489"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Message View Controller-->
         <scene sceneID="ks0-YJ-iGV">
             <objects>
-                <tableViewController id="vrK-7g-Faj" sceneMemberID="viewController">
+                <tableViewController id="vrK-7g-Faj" customClass="MessageViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="Qmq-QJ-uK7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ydb-Lf-U5H">
-                                <rect key="frame" x="0.0" y="92" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ydb-Lf-U5H" id="OwT-BH-64D">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
@@ -71,12 +71,40 @@
                                 <segment title="电话"/>
                             </segments>
                         </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="gep-oQ-lpd"/>
+                        <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="gep-oQ-lpd">
+                            <connections>
+                                <segue destination="dnY-0A-nTs" kind="popoverPresentation" popoverAnchorBarButtonItem="gep-oQ-lpd" id="Lcb-TK-u0k">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4T-3B-SSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.5" y="-89.5"/>
+            <point key="canvasLocation" x="734.5" y="-89.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="P5T-OI-ErU">
+            <objects>
+                <viewController id="dnY-0A-nTs" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="iiJ-yq-d2r"/>
+                        <viewControllerLayoutGuide type="bottom" id="mqq-qL-kQC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AG9-vz-Mbc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <value key="contentSizeForViewInPopover" type="size" width="100" height="300"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3k-Gm-RUx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1269.5" y="-89.5"/>
         </scene>
         <!--消息-->
         <scene sceneID="bDN-uG-edT">
@@ -204,7 +232,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PUc-Iw-Y5w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="329.5" y="699.5"/>
+            <point key="canvasLocation" x="341.5" y="634.5"/>
         </scene>
     </scenes>
     <resources>

@@ -9,6 +9,7 @@
 #import "detail.h"
 
 @interface detail ()
+@property (weak, nonatomic) IBOutlet UILabel *labDate;
 
 @end
 
@@ -16,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.labDate.text=[[self.delegate valueForKey:@"timeStamp"] description] ;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     

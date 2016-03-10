@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85B88A6E1C9133A30003DB59 /* MessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B88A6D1C9133A30003DB59 /* MessageViewController.m */; };
+		85B88A721C913EED0003DB59 /* AddView.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B88A711C913EED0003DB59 /* AddView.m */; };
 		85FCDFA61C8FE82D000A7627 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDFA51C8FE82D000A7627 /* main.m */; };
 		85FCDFA91C8FE82D000A7627 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDFA81C8FE82D000A7627 /* AppDelegate.m */; };
 		85FCDFAC1C8FE82D000A7627 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDFAB1C8FE82D000A7627 /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85B88A6C1C9133A30003DB59 /* MessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageViewController.h; sourceTree = "<group>"; };
+		85B88A6D1C9133A30003DB59 /* MessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageViewController.m; sourceTree = "<group>"; };
+		85B88A701C913EED0003DB59 /* AddView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddView.h; sourceTree = "<group>"; };
+		85B88A711C913EED0003DB59 /* AddView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddView.m; sourceTree = "<group>"; };
 		85FCDFA11C8FE82D000A7627 /* qq.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qq.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85FCDFA51C8FE82D000A7627 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		85FCDFA71C8FE82D000A7627 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +88,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85B88A6B1C9133790003DB59 /* 消息 */ = {
+			isa = PBXGroup;
+			children = (
+				85B88A6C1C9133A30003DB59 /* MessageViewController.h */,
+				85B88A6D1C9133A30003DB59 /* MessageViewController.m */,
+			);
+			name = "消息";
+			sourceTree = "<group>";
+		};
+		85B88A6F1C913E520003DB59 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				85B88A701C913EED0003DB59 /* AddView.h */,
+				85B88A711C913EED0003DB59 /* AddView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		85FCDF981C8FE82D000A7627 = {
 			isa = PBXGroup;
 			children = (
@@ -105,6 +129,8 @@
 		85FCDFA31C8FE82D000A7627 /* qq */ = {
 			isa = PBXGroup;
 			children = (
+				85B88A6F1C913E520003DB59 /* View */,
+				85B88A6B1C9133790003DB59 /* 消息 */,
 				85FCDFDA1C8FEB8C000A7627 /* chinaz0.png */,
 				85FCDFA71C8FE82D000A7627 /* AppDelegate.h */,
 				85FCDFA81C8FE82D000A7627 /* AppDelegate.m */,
@@ -277,7 +303,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85B88A721C913EED0003DB59 /* AddView.m in Sources */,
 				85FCDFAC1C8FE82D000A7627 /* ViewController.m in Sources */,
+				85B88A6E1C9133A30003DB59 /* MessageViewController.m in Sources */,
 				85FCDFB21C8FE82D000A7627 /* qq.xcdatamodeld in Sources */,
 				85FCDFA91C8FE82D000A7627 /* AppDelegate.m in Sources */,
 				85FCDFA61C8FE82D000A7627 /* main.m in Sources */,
@@ -504,6 +532,7 @@
 				85FCDFD31C8FE82D000A7627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85FCDFD41C8FE82D000A7627 /* Build configuration list for PBXNativeTarget "qqTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +541,7 @@
 				85FCDFD61C8FE82D000A7627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		85FCDFD71C8FE82D000A7627 /* Build configuration list for PBXNativeTarget "qqUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +550,7 @@
 				85FCDFD91C8FE82D000A7627 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

@@ -36,9 +36,15 @@ static NSString *const kName=@"name";
 }
 -(void)loadViews {
    NSManagedObject * stu= [self.students firstObject];
+    if(self.students.count<=1){
+        self.btnNext.enabled=NO;
+        self.btnLast.enabled=NO;
+        return;
+    }
     self.txtNum.text=[[stu valueForKey:kNum] description];
     self.txtClassName.text=[stu valueForKey:kClassName];
     self.txtName.text=[stu valueForKey:kName];
+    
     index=0;
     self.btnLast.enabled=(index!=0);
     self.btnNext.enabled=(index!=self.students.count-1);
@@ -114,7 +120,7 @@ static NSString *const kName=@"name";
 }
 -(void)showStu{
     NSManagedObject * stu= self.students[index];
-
+    
     self.txtNum.text=[[stu valueForKey:kNum] description];
     self.txtClassName.text=[stu valueForKey:kClassName];
     self.txtName.text=[stu valueForKey:kName];
@@ -140,16 +146,39 @@ static NSString *const kName=@"name";
         
         
     }
+   
     [student setValue:@([self.txtNum.text intValue]) forKey:kNum];
     [student setValue:self.txtClassName.text forKey:kClassName];
     [student setValue:self.txtName.text forKey:kName];
     [appDelegate saveContext];
+    if(self.students.count<=1){
+        self.btnNext.enabled=NO;
+        self.btnLast.enabled=NO;
+        return;
+    }
+
     index=self.students.count-1;
     self.btnNext.enabled=NO;
     self.btnLast.enabled=YES;
 }
 - (IBAction)btnDeleteAction:(id)sender {
-    
+    NSArray *arr=[self queryAll];
+     AppDelegate * appDelegate = [UIApplication sharedApplication].delegate;
+     NSManagedObjectContext * context = [appDelegate managedObjectContext];
+    for(NSManagedObject *temp in arr){
+        [context deleteObject:temp];
+        NSError *erro;
+        [context save:&erro];
+        if(erro){
+            NSLog(@"erro:%@",erro);
+            abort();
+        }
+    }
+    self.txtNum.text=@"";
+    self.txtClassName.text=@"";
+    self.txtName.text=@"";
+    self.btnLast.enabled=NO;
+    self.btnNext.enabled=NO;
 }
 
 - (void)didReceiveMemoryWarning {
