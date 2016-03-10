@@ -73,9 +73,7 @@
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" title="Item" systemItem="add" id="gep-oQ-lpd">
                             <connections>
-                                <segue destination="dnY-0A-nTs" kind="popoverPresentation" popoverAnchorBarButtonItem="gep-oQ-lpd" id="Lcb-TK-u0k">
-                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                </segue>
+                                <action selector="addAction:" destination="vrK-7g-Faj" id="xoz-bU-fV2"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -83,7 +81,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A4T-3B-SSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="734.5" y="-89.5"/>
+            <point key="canvasLocation" x="892.5" y="-100.5"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="P5T-OI-ErU">

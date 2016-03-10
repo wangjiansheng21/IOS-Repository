@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface AddView : UIView
-
+@protocol AddViewDelegate<NSObject>
+@optional
+-(void)toAnother:(NSInteger)index;
+@end
+@interface AddView : UIView<UITableViewDataSource,UITableViewDelegate>
+@property(nonatomic,strong)NSArray *dataLists;
+@property(nonatomic,weak)id<AddViewDelegate>delegate;
 @end
