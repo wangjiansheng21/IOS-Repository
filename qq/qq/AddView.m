@@ -8,6 +8,7 @@
 
 #import "AddView.h"
 #import "AddModel.h"
+
 @implementation AddView
 -(NSArray *)dataLists{
     if(_dataLists==nil){
