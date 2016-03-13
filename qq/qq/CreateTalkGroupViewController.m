@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.title=@"创建讨论组";
         self.view.backgroundColor=[UIColor redColor];
+     self.tabBarController.tabBar.hidden=YES;
     // Do any additional setup after loading the view.
 }
 

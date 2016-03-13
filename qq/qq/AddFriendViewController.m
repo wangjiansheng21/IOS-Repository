@@ -18,6 +18,7 @@
     [super viewDidLoad];
         self.view.backgroundColor=[UIColor redColor];
     self.title=@"添加";
+     self.tabBarController.tabBar.hidden=YES;
     // Do any additional setup after loading the view.
 }
 

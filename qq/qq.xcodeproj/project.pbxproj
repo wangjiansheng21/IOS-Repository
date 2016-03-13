@@ -19,6 +19,35 @@
 		85FCDFC21C8FE82D000A7627 /* qqTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDFC11C8FE82D000A7627 /* qqTests.m */; };
 		85FCDFCD1C8FE82D000A7627 /* qqUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 85FCDFCC1C8FE82D000A7627 /* qqUITests.m */; };
 		85FCDFDB1C8FEB8C000A7627 /* chinaz0.png in Resources */ = {isa = PBXBuildFile; fileRef = 85FCDFDA1C8FEB8C000A7627 /* chinaz0.png */; };
+		CD030A491C9518A00068BF4E /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD030A481C9518A00068BF4E /* BaseViewController.m */; };
+		CD030A4B1C951F0C0068BF4E /* my.png in Resources */ = {isa = PBXBuildFile; fileRef = CD030A4A1C951F0C0068BF4E /* my.png */; };
+		CD030A4D1C95201D0068BF4E /* 48.png in Resources */ = {isa = PBXBuildFile; fileRef = CD030A4C1C95201D0068BF4E /* 48.png */; };
+		CD030A511C9521B90068BF4E /* MessageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD030A4F1C9521B90068BF4E /* MessageTableViewCell.m */; };
+		CD030A521C9521B90068BF4E /* MessageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD030A501C9521B90068BF4E /* MessageTableViewCell.xib */; };
+		CD030A551C95284D0068BF4E /* MessageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD030A541C95284D0068BF4E /* MessageModel.m */; };
+		CD030A591C953B4C0068BF4E /* 01.png in Resources */ = {isa = PBXBuildFile; fileRef = CD030A581C953B4C0068BF4E /* 01.png */; };
+		CD03D4381C953BD100E13338 /* Message.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4371C953BD100E13338 /* Message.plist */; };
+		CD03D43C1C95480C00E13338 /* 消息.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D43B1C95480C00E13338 /* 消息.png */; };
+		CD03D4421C9549C800E13338 /* 联系.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4411C9549C800E13338 /* 联系.png */; };
+		CD03D4441C954A2F00E13338 /* 动态.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4431C954A2F00E13338 /* 动态.png */; };
+		CD03D44B1C95538F00E13338 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4481C95538F00E13338 /* MyCell.m */; };
+		CD03D44C1C95538F00E13338 /* OtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D44A1C95538F00E13338 /* OtherCell.m */; };
+		CD03D4501C9553B200E13338 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D44F1C9553B200E13338 /* Message.m */; };
+		CD03D4521C9553DB00E13338 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4511C9553DB00E13338 /* me.jpg */; };
+		CD03D46D1C95541600E13338 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4551C95541600E13338 /* MASCompositeConstraint.m */; };
+		CD03D46E1C95541600E13338 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4571C95541600E13338 /* MASConstraint.m */; };
+		CD03D46F1C95541600E13338 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D45A1C95541600E13338 /* MASConstraintMaker.m */; };
+		CD03D4701C95541600E13338 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D45C1C95541600E13338 /* MASLayoutConstraint.m */; };
+		CD03D4711C95541600E13338 /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4601C95541600E13338 /* MASViewAttribute.m */; };
+		CD03D4721C95541600E13338 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4621C95541600E13338 /* MASViewConstraint.m */; };
+		CD03D4731C95541600E13338 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4641C95541600E13338 /* NSArray+MASAdditions.m */; };
+		CD03D4741C95541600E13338 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4671C95541600E13338 /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		CD03D4751C95541600E13338 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4691C95541600E13338 /* View+MASAdditions.m */; };
+		CD03D4761C95541600E13338 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D46C1C95541600E13338 /* ViewController+MASAdditions.m */; };
+		CD03D47A1C9559A000E13338 /* SendMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4781C9559A000E13338 /* SendMessageViewController.m */; };
+		CD03D47B1C9559A000E13338 /* SendMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4791C9559A000E13338 /* SendMessageViewController.xib */; };
+		CD03D4811C9564FC00E13338 /* 电话.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4801C9564FC00E13338 /* 电话.png */; };
+		CD03D4831C95661600E13338 /* 联系人.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4821C95661600E13338 /* 联系人.png */; };
 		CD3E88411C91A82A007E44CF /* AddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3E88401C91A82A007E44CF /* AddModel.m */; };
 		CD3E88441C91AD38007E44CF /* add.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD3E88431C91AD38007E44CF /* add.plist */; };
 		CD3E88461C91B366007E44CF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3E88451C91B366007E44CF /* icon.png */; };
@@ -70,6 +99,57 @@
 		85FCDFCC1C8FE82D000A7627 /* qqUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = qqUITests.m; sourceTree = "<group>"; };
 		85FCDFCE1C8FE82D000A7627 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85FCDFDA1C8FEB8C000A7627 /* chinaz0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chinaz0.png; sourceTree = "<group>"; };
+		CD030A471C9518A00068BF4E /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		CD030A481C9518A00068BF4E /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		CD030A4A1C951F0C0068BF4E /* my.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my.png; sourceTree = "<group>"; };
+		CD030A4C1C95201D0068BF4E /* 48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 48.png; sourceTree = "<group>"; };
+		CD030A4E1C9521B90068BF4E /* MessageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageTableViewCell.h; sourceTree = "<group>"; };
+		CD030A4F1C9521B90068BF4E /* MessageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageTableViewCell.m; sourceTree = "<group>"; };
+		CD030A501C9521B90068BF4E /* MessageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageTableViewCell.xib; sourceTree = "<group>"; };
+		CD030A531C95284D0068BF4E /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
+		CD030A541C95284D0068BF4E /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
+		CD030A581C953B4C0068BF4E /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
+		CD03D4371C953BD100E13338 /* Message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Message.plist; sourceTree = "<group>"; };
+		CD03D43B1C95480C00E13338 /* 消息.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息.png"; sourceTree = "<group>"; };
+		CD03D4411C9549C800E13338 /* 联系.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系.png"; sourceTree = "<group>"; };
+		CD03D4431C954A2F00E13338 /* 动态.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动态.png"; sourceTree = "<group>"; };
+		CD03D4481C95538F00E13338 /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		CD03D4491C95538F00E13338 /* OtherCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OtherCell.h; sourceTree = "<group>"; };
+		CD03D44A1C95538F00E13338 /* OtherCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OtherCell.m; sourceTree = "<group>"; };
+		CD03D44D1C95539D00E13338 /* MyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		CD03D44E1C9553B200E13338 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		CD03D44F1C9553B200E13338 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		CD03D4511C9553DB00E13338 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = me.jpg; path = qq/me.jpg; sourceTree = "<group>"; };
+		CD03D4541C95541600E13338 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
+		CD03D4551C95541600E13338 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
+		CD03D4561C95541600E13338 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
+		CD03D4571C95541600E13338 /* MASConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraint.m; sourceTree = "<group>"; };
+		CD03D4581C95541600E13338 /* MASConstraint+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MASConstraint+Private.h"; sourceTree = "<group>"; };
+		CD03D4591C95541600E13338 /* MASConstraintMaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraintMaker.h; sourceTree = "<group>"; };
+		CD03D45A1C95541600E13338 /* MASConstraintMaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASConstraintMaker.m; sourceTree = "<group>"; };
+		CD03D45B1C95541600E13338 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASLayoutConstraint.h; sourceTree = "<group>"; };
+		CD03D45C1C95541600E13338 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASLayoutConstraint.m; sourceTree = "<group>"; };
+		CD03D45D1C95541600E13338 /* Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
+		CD03D45E1C95541600E13338 /* MASUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASUtilities.h; sourceTree = "<group>"; };
+		CD03D45F1C95541600E13338 /* MASViewAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewAttribute.h; sourceTree = "<group>"; };
+		CD03D4601C95541600E13338 /* MASViewAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewAttribute.m; sourceTree = "<group>"; };
+		CD03D4611C95541600E13338 /* MASViewConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASViewConstraint.h; sourceTree = "<group>"; };
+		CD03D4621C95541600E13338 /* MASViewConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASViewConstraint.m; sourceTree = "<group>"; };
+		CD03D4631C95541600E13338 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASAdditions.h"; sourceTree = "<group>"; };
+		CD03D4641C95541600E13338 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+MASAdditions.m"; sourceTree = "<group>"; };
+		CD03D4651C95541600E13338 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		CD03D4661C95541600E13338 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		CD03D4671C95541600E13338 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
+		CD03D4681C95541600E13338 /* View+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASAdditions.h"; sourceTree = "<group>"; };
+		CD03D4691C95541600E13338 /* View+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "View+MASAdditions.m"; sourceTree = "<group>"; };
+		CD03D46A1C95541600E13338 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		CD03D46B1C95541600E13338 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewController+MASAdditions.h"; sourceTree = "<group>"; };
+		CD03D46C1C95541600E13338 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewController+MASAdditions.m"; sourceTree = "<group>"; };
+		CD03D4771C9559A000E13338 /* SendMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendMessageViewController.h; sourceTree = "<group>"; };
+		CD03D4781C9559A000E13338 /* SendMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendMessageViewController.m; sourceTree = "<group>"; };
+		CD03D4791C9559A000E13338 /* SendMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendMessageViewController.xib; sourceTree = "<group>"; };
+		CD03D4801C9564FC00E13338 /* 电话.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电话.png"; sourceTree = "<group>"; };
+		CD03D4821C95661600E13338 /* 联系人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系人.png"; sourceTree = "<group>"; };
 		CD3E883F1C91A82A007E44CF /* AddModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddModel.h; sourceTree = "<group>"; };
 		CD3E88401C91A82A007E44CF /* AddModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddModel.m; sourceTree = "<group>"; };
 		CD3E88431C91AD38007E44CF /* add.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = add.plist; sourceTree = "<group>"; };
@@ -118,6 +198,17 @@
 			children = (
 				85B88A6C1C9133A30003DB59 /* MessageViewController.h */,
 				85B88A6D1C9133A30003DB59 /* MessageViewController.m */,
+				CD030A471C9518A00068BF4E /* BaseViewController.h */,
+				CD030A481C9518A00068BF4E /* BaseViewController.m */,
+				CD030A4E1C9521B90068BF4E /* MessageTableViewCell.h */,
+				CD03D4491C95538F00E13338 /* OtherCell.h */,
+				CD030A4F1C9521B90068BF4E /* MessageTableViewCell.m */,
+				CD030A501C9521B90068BF4E /* MessageTableViewCell.xib */,
+				CD030A531C95284D0068BF4E /* MessageModel.h */,
+				CD030A541C95284D0068BF4E /* MessageModel.m */,
+				CD03D4771C9559A000E13338 /* SendMessageViewController.h */,
+				CD03D4781C9559A000E13338 /* SendMessageViewController.m */,
+				CD03D4791C9559A000E13338 /* SendMessageViewController.xib */,
 			);
 			name = "消息";
 			sourceTree = "<group>";
@@ -125,6 +216,9 @@
 		85B88A6F1C913E520003DB59 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CD03D44D1C95539D00E13338 /* MyCell.h */,
+				CD03D4481C95538F00E13338 /* MyCell.m */,
+				CD03D44A1C95538F00E13338 /* OtherCell.m */,
 				85B88A701C913EED0003DB59 /* AddView.h */,
 				85B88A711C913EED0003DB59 /* AddView.m */,
 			);
@@ -134,7 +228,9 @@
 		85FCDF981C8FE82D000A7627 = {
 			isa = PBXGroup;
 			children = (
-				CD3E88451C91B366007E44CF /* icon.png */,
+				CD03D4531C9553FE00E13338 /* masonry */,
+				CD03D4371C953BD100E13338 /* Message.plist */,
+				CD030A571C953B2A0068BF4E /* images */,
 				CD3E88431C91AD38007E44CF /* add.plist */,
 				85FCDFA31C8FE82D000A7627 /* qq */,
 				85FCDFC01C8FE82D000A7627 /* qqTests */,
@@ -202,9 +298,60 @@
 			path = qqUITests;
 			sourceTree = "<group>";
 		};
+		CD030A571C953B2A0068BF4E /* images */ = {
+			isa = PBXGroup;
+			children = (
+				CD03D4821C95661600E13338 /* 联系人.png */,
+				CD03D4801C9564FC00E13338 /* 电话.png */,
+				CD03D4431C954A2F00E13338 /* 动态.png */,
+				CD03D43B1C95480C00E13338 /* 消息.png */,
+				CD03D4411C9549C800E13338 /* 联系.png */,
+				CD03D4511C9553DB00E13338 /* me.jpg */,
+				CD030A581C953B4C0068BF4E /* 01.png */,
+				CD3E88451C91B366007E44CF /* icon.png */,
+				CD030A4A1C951F0C0068BF4E /* my.png */,
+				CD030A4C1C95201D0068BF4E /* 48.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		CD03D4531C9553FE00E13338 /* masonry */ = {
+			isa = PBXGroup;
+			children = (
+				CD03D4541C95541600E13338 /* MASCompositeConstraint.h */,
+				CD03D4551C95541600E13338 /* MASCompositeConstraint.m */,
+				CD03D4561C95541600E13338 /* MASConstraint.h */,
+				CD03D4571C95541600E13338 /* MASConstraint.m */,
+				CD03D4581C95541600E13338 /* MASConstraint+Private.h */,
+				CD03D4591C95541600E13338 /* MASConstraintMaker.h */,
+				CD03D45A1C95541600E13338 /* MASConstraintMaker.m */,
+				CD03D45B1C95541600E13338 /* MASLayoutConstraint.h */,
+				CD03D45C1C95541600E13338 /* MASLayoutConstraint.m */,
+				CD03D45D1C95541600E13338 /* Masonry.h */,
+				CD03D45E1C95541600E13338 /* MASUtilities.h */,
+				CD03D45F1C95541600E13338 /* MASViewAttribute.h */,
+				CD03D4601C95541600E13338 /* MASViewAttribute.m */,
+				CD03D4611C95541600E13338 /* MASViewConstraint.h */,
+				CD03D4621C95541600E13338 /* MASViewConstraint.m */,
+				CD03D4631C95541600E13338 /* NSArray+MASAdditions.h */,
+				CD03D4641C95541600E13338 /* NSArray+MASAdditions.m */,
+				CD03D4651C95541600E13338 /* NSArray+MASShorthandAdditions.h */,
+				CD03D4661C95541600E13338 /* NSLayoutConstraint+MASDebugAdditions.h */,
+				CD03D4671C95541600E13338 /* NSLayoutConstraint+MASDebugAdditions.m */,
+				CD03D4681C95541600E13338 /* View+MASAdditions.h */,
+				CD03D4691C95541600E13338 /* View+MASAdditions.m */,
+				CD03D46A1C95541600E13338 /* View+MASShorthandAdditions.h */,
+				CD03D46B1C95541600E13338 /* ViewController+MASAdditions.h */,
+				CD03D46C1C95541600E13338 /* ViewController+MASAdditions.m */,
+			);
+			name = masonry;
+			sourceTree = "<group>";
+		};
 		CD3E883E1C91A7FE007E44CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CD03D44E1C9553B200E13338 /* Message.h */,
+				CD03D44F1C9553B200E13338 /* Message.m */,
 				CD3E883F1C91A82A007E44CF /* AddModel.h */,
 				CD3E88401C91A82A007E44CF /* AddModel.m */,
 			);
@@ -340,10 +487,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD03D4441C954A2F00E13338 /* 动态.png in Resources */,
+				CD03D4811C9564FC00E13338 /* 电话.png in Resources */,
+				CD03D4421C9549C800E13338 /* 联系.png in Resources */,
+				CD03D4831C95661600E13338 /* 联系人.png in Resources */,
+				CD030A591C953B4C0068BF4E /* 01.png in Resources */,
 				85FCDFB71C8FE82D000A7627 /* LaunchScreen.storyboard in Resources */,
+				CD03D47B1C9559A000E13338 /* SendMessageViewController.xib in Resources */,
 				CD3E88441C91AD38007E44CF /* add.plist in Resources */,
+				CD03D4521C9553DB00E13338 /* me.jpg in Resources */,
+				CD030A4B1C951F0C0068BF4E /* my.png in Resources */,
 				CD3E88461C91B366007E44CF /* icon.png in Resources */,
+				CD030A521C9521B90068BF4E /* MessageTableViewCell.xib in Resources */,
 				85FCDFB41C8FE82D000A7627 /* Assets.xcassets in Resources */,
+				CD030A4D1C95201D0068BF4E /* 48.png in Resources */,
+				CD03D43C1C95480C00E13338 /* 消息.png in Resources */,
+				CD03D4381C953BD100E13338 /* Message.plist in Resources */,
 				85FCDFAF1C8FE82D000A7627 /* Main.storyboard in Resources */,
 				85FCDFDB1C8FEB8C000A7627 /* chinaz0.png in Resources */,
 			);
@@ -371,18 +530,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				85B88A721C913EED0003DB59 /* AddView.m in Sources */,
+				CD03D44C1C95538F00E13338 /* OtherCell.m in Sources */,
 				85FCDFAC1C8FE82D000A7627 /* ViewController.m in Sources */,
+				CD030A511C9521B90068BF4E /* MessageTableViewCell.m in Sources */,
+				CD03D4701C95541600E13338 /* MASLayoutConstraint.m in Sources */,
 				85B88A6E1C9133A30003DB59 /* MessageViewController.m in Sources */,
 				CD3E884A1C91CD9B007E44CF /* ScanViewController.m in Sources */,
+				CD03D44B1C95538F00E13338 /* MyCell.m in Sources */,
 				85FCDFB21C8FE82D000A7627 /* qq.xcdatamodeld in Sources */,
+				CD030A491C9518A00068BF4E /* BaseViewController.m in Sources */,
+				CD03D4711C95541600E13338 /* MASViewAttribute.m in Sources */,
 				85FCDFA91C8FE82D000A7627 /* AppDelegate.m in Sources */,
+				CD03D46F1C95541600E13338 /* MASConstraintMaker.m in Sources */,
+				CD03D4751C95541600E13338 /* View+MASAdditions.m in Sources */,
+				CD03D4721C95541600E13338 /* MASViewConstraint.m in Sources */,
+				CD03D46D1C95541600E13338 /* MASCompositeConstraint.m in Sources */,
 				CD3E88501C91D0B7007E44CF /* CreateTalkGroupViewController.m in Sources */,
 				CD3E88531C91D0E3007E44CF /* SendToComputerViewController.m in Sources */,
 				CD3E88561C91D115007E44CF /* FaceToFaceFastTransformViewController.m in Sources */,
 				85FCDFA61C8FE82D000A7627 /* main.m in Sources */,
 				CD3E88591C91D14C007E44CF /* CollectMoneyViewController.m in Sources */,
+				CD03D46E1C95541600E13338 /* MASConstraint.m in Sources */,
 				CD3E884D1C91D08C007E44CF /* AddFriendViewController.m in Sources */,
+				CD03D4741C95541600E13338 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				CD03D47A1C9559A000E13338 /* SendMessageViewController.m in Sources */,
+				CD03D4731C95541600E13338 /* NSArray+MASAdditions.m in Sources */,
+				CD03D4761C95541600E13338 /* ViewController+MASAdditions.m in Sources */,
+				CD03D4501C9553B200E13338 /* Message.m in Sources */,
 				CD3E88411C91A82A007E44CF /* AddModel.m in Sources */,
+				CD030A551C95284D0068BF4E /* MessageModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title=@"收钱";
-        self.view.backgroundColor=[UIColor redColor];
+    self.view.backgroundColor=[UIColor redColor];
+    self.tabBarController.tabBar.hidden=YES;
     // Do any additional setup after loading the view.
 }
 

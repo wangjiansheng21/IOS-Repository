@@ -1,30 +1,37 @@
 //
-//  FaceToFaceFastTransformViewController.m
+//  BaseViewController.m
 //  qq
 //
-//  Created by 王建生 on 16/3/10.
+//  Created by 王建生 on 16/3/13.
 //  Copyright © 2016年 AppleUser. All rights reserved.
 //
 
-#import "FaceToFaceFastTransformViewController.h"
+#import "BaseViewController.h"
 
-@interface FaceToFaceFastTransformViewController ()
+@interface BaseViewController ()
 
 @end
 
-@implementation FaceToFaceFastTransformViewController
+@implementation BaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=@"面对面快传";
-        self.view.backgroundColor=[UIColor redColor];
-     self.tabBarController.tabBar.hidden=YES;
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+-(void)initViews{
+    //    修改导航条颜色
+    self.navigationController.navigationBar.barTintColor=[UIColor colorWithRed:0.1 green:0.1 blue:0.9 alpha:1];
+    //    修改导航条上各子控件颜色
+    self.navigationController.navigationBar.tintColor=[UIColor whiteColor];
+    //   修改状态栏样式，必须修改info.plist文件View controller-based status bar appearance 改为no
+    [UIApplication sharedApplication].statusBarStyle=UIStatusBarStyleLightContent;
+    
+    
 }
 
 /*
