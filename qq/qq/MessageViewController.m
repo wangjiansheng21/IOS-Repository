@@ -14,6 +14,7 @@
 #import "SendToComputerViewController.h"
 #import "FaceToFaceFastTransformViewController.h"
 #import "CollectMoneyViewController.h"
+#import "PhoneYellowPageViewController.h"
 #import "AddView.h"
 #define  APPW [UIScreen mainScreen].bounds.size.width
 #define APPH [UIScreen mainScreen].bounds.size.height
@@ -27,6 +28,7 @@
 @property(nonatomic,strong)NSArray *dataLists;
 @property(nonatomic,strong)NSArray *displayArray;
 @property(nonatomic,strong)UISearchBar *searchBar;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segment;
 
 @end
 
@@ -125,22 +127,52 @@
     return self.displayArray.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *identifier=@"cell";
-    MessageTableViewCell *myCell=[tableView dequeueReusableCellWithIdentifier:identifier];
-    if(myCell==nil){
-        myCell=[[[NSBundle mainBundle]loadNibNamed:@"MessageTableViewCell" owner:self options:nil] lastObject];
+    static NSString *identifier1=@"cell1";
+    static NSString *identifier2=@"cell2";
+    UITableViewCell *myCell=nil;
+    if(self.segment.selectedSegmentIndex==0){
+        myCell=[tableView dequeueReusableCellWithIdentifier:identifier1];
+        if(myCell==nil){
+            myCell=[[[NSBundle mainBundle]loadNibNamed:@"MessageTableViewCell" owner:self options:nil] lastObject];
+        }
+    ((MessageTableViewCell*)myCell).model=self.displayArray[indexPath.row];
+    }else{
+        myCell=[tableView dequeueReusableCellWithIdentifier:identifier2];
+        if(myCell==nil){
+            myCell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identifier2];
+        }
+        myCell.imageView.image=[UIImage imageNamed:self.displayArray[indexPath.row]];
+        myCell.textLabel.text=self.displayArray[indexPath.row];
+        myCell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
     }
-    myCell.model=self.displayArray[indexPath.row];
+   
+
     return myCell;
 }
 #pragma mark UITableViewDelegate
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(self.segment.selectedSegmentIndex==0){
+        SendMessageViewController *svc=[[SendMessageViewController alloc] initWithNibName:@"SendMessageViewController" bundle:nil];
+        svc.model=self.self.displayArray[indexPath.row];
+        [self presentViewController:svc animated:YES completion:^{
+            
+        }];
+    }else{
+        if(indexPath.row==0){
+            PhoneYellowPageViewController *phoneYellowPage=[PhoneYellowPageViewController new];
+//            self.navigationItem.backBarButtonItem.title=@"电话";
+            [self.navigationController pushViewController:phoneYellowPage animated:YES];
+        }else{
+            
+        }
+    }
     
-    SendMessageViewController *svc=[[SendMessageViewController alloc] initWithNibName:@"SendMessageViewController" bundle:nil];
-    svc.model=self.self.displayArray[indexPath.row];
-    [self presentViewController:svc animated:YES completion:^{
-        
-    }];
+}
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    if(self.segment.selectedSegmentIndex==1){
+        return 50;
+    }
+    return 80;
 }
 #pragma mark UIScrollViewDelegate
 -(void)scrollViewDidScroll:(UIScrollView *)scrollView{
@@ -158,14 +190,19 @@
 }
 #pragma mark UISearchBarDelegate
 -(void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText{
-    if(searchText.length==0){
-        self.displayArray=self.dataLists;
+    if(self.segment.selectedSegmentIndex==0){
+        if(searchText.length==0){
+            self.displayArray=self.dataLists;
+            [self.tableView reloadData];
+            return;
+        }
+        NSPredicate *pre=[NSPredicate predicateWithFormat:@"self.name contains %@",searchText];
+        self.displayArray=[self.dataLists filteredArrayUsingPredicate:pre];
         [self.tableView reloadData];
-        return;
+    }else{
+        
     }
-    NSPredicate *pre=[NSPredicate predicateWithFormat:@"self.name contains %@",searchText];
-    self.displayArray=[self.dataLists filteredArrayUsingPredicate:pre];
-    [self.tableView reloadData];
+    
 }
 /*
 #pragma mark - Navigation
@@ -176,5 +213,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (IBAction)valueChangeAction:(UISegmentedControl *)sender {
+    self.displayArray=nil;
+    if(self.segment.selectedSegmentIndex==1){
+        self.displayArray=@[@"电话黄页",@"通讯录"];
+    }else{
+        self.displayArray=self.dataLists;
+    }
+    [self.tableView reloadData];
+}
 
 @end

@@ -58,9 +58,6 @@
     [self.labName setTextColor:[UIColor whiteColor]];
     self.labName.adjustsFontSizeToFitWidth=YES;
     self.labName.text=self.model.name;
-    
-//    NSLog(@"self.model.name:%@",self.model.name);
-//    self.navigationItem.title=self.model.name;
 }
 -(void)updateTime{
     Message *preMessage;
@@ -78,7 +75,6 @@
     if(!self.marr.count==0){
         NSIndexPath *path=[NSIndexPath indexPathForRow:self.marr.count-1 inSection:0];
         [self.tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];
-        //        self.tableView.contentInset=UIEdgeInsetsMake(0, 0,30, 0);
     }
     
 }
@@ -86,8 +82,6 @@
     UIView *view=[UIView new];
     view.backgroundColor=[UIColor clearColor];
     self.tableView.tableFooterView=view;
-    //    self.tableView.backgroundColor=[UIColor redColor];
-    
 }
 #pragma mark UITableViewDelegate UITableViewDataSource
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
@@ -175,7 +169,8 @@
     _txtMessage.clearButtonMode= UITextFieldViewModeAlways;
     btnSend=[UIButton buttonWithType:UIButtonTypeSystem];
     btnSend.enabled=NO;
-    btnSend.backgroundColor=[UIColor whiteColor];
+    btnSend.backgroundColor=[UIColor grayColor];
+    [btnSend setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [btnSend setTitle:@"发送" forState:UIControlStateNormal];
     [self.myKeyBoardView addSubview:btnSend];
     [self.myKeyBoardView addSubview:_txtMessage];

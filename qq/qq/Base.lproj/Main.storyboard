@@ -58,6 +58,9 @@
                                 <segment title="消息"/>
                                 <segment title="电话"/>
                             </segments>
+                            <connections>
+                                <action selector="valueChangeAction:" destination="Prq-Qb-SQY" eventType="valueChanged" id="Cx2-Xw-aNf"/>
+                            </connections>
                         </segmentedControl>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="eWz-8C-CBS">
                             <connections>
@@ -66,6 +69,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="segment" destination="GCh-LJ-YsK" id="KpF-Ib-YsG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6ub-4L-XBm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

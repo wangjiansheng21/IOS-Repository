@@ -33,7 +33,6 @@
 		CD03D44B1C95538F00E13338 /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4481C95538F00E13338 /* MyCell.m */; };
 		CD03D44C1C95538F00E13338 /* OtherCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D44A1C95538F00E13338 /* OtherCell.m */; };
 		CD03D4501C9553B200E13338 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D44F1C9553B200E13338 /* Message.m */; };
-		CD03D4521C9553DB00E13338 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4511C9553DB00E13338 /* me.jpg */; };
 		CD03D46D1C95541600E13338 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4551C95541600E13338 /* MASCompositeConstraint.m */; };
 		CD03D46E1C95541600E13338 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4571C95541600E13338 /* MASConstraint.m */; };
 		CD03D46F1C95541600E13338 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D45A1C95541600E13338 /* MASConstraintMaker.m */; };
@@ -48,6 +47,12 @@
 		CD03D47B1C9559A000E13338 /* SendMessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4791C9559A000E13338 /* SendMessageViewController.xib */; };
 		CD03D4811C9564FC00E13338 /* 电话.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4801C9564FC00E13338 /* 电话.png */; };
 		CD03D4831C95661600E13338 /* 联系人.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4821C95661600E13338 /* 联系人.png */; };
+		CD03D4851C95993E00E13338 /* my1.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4841C95993E00E13338 /* my1.png */; };
+		CD03D48B1C959A1B00E13338 /* me.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CD03D48A1C959A1B00E13338 /* me.jpg */; };
+		CD03D48D1C959BBF00E13338 /* 电话黄页.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D48C1C959BBF00E13338 /* 电话黄页.png */; };
+		CD03D48F1C959BCF00E13338 /* 通讯录.png in Resources */ = {isa = PBXBuildFile; fileRef = CD03D48E1C959BCF00E13338 /* 通讯录.png */; };
+		CD03D4931C95A41700E13338 /* PhoneYellowPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD03D4911C95A41700E13338 /* PhoneYellowPageViewController.m */; };
+		CD03D4941C95A41700E13338 /* PhoneYellowPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD03D4921C95A41700E13338 /* PhoneYellowPageViewController.xib */; };
 		CD3E88411C91A82A007E44CF /* AddModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CD3E88401C91A82A007E44CF /* AddModel.m */; };
 		CD3E88441C91AD38007E44CF /* add.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD3E88431C91AD38007E44CF /* add.plist */; };
 		CD3E88461C91B366007E44CF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CD3E88451C91B366007E44CF /* icon.png */; };
@@ -119,7 +124,6 @@
 		CD03D44D1C95539D00E13338 /* MyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		CD03D44E1C9553B200E13338 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
 		CD03D44F1C9553B200E13338 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
-		CD03D4511C9553DB00E13338 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = me.jpg; path = qq/me.jpg; sourceTree = "<group>"; };
 		CD03D4541C95541600E13338 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASCompositeConstraint.h; sourceTree = "<group>"; };
 		CD03D4551C95541600E13338 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MASCompositeConstraint.m; sourceTree = "<group>"; };
 		CD03D4561C95541600E13338 /* MASConstraint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MASConstraint.h; sourceTree = "<group>"; };
@@ -150,6 +154,13 @@
 		CD03D4791C9559A000E13338 /* SendMessageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SendMessageViewController.xib; sourceTree = "<group>"; };
 		CD03D4801C9564FC00E13338 /* 电话.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电话.png"; sourceTree = "<group>"; };
 		CD03D4821C95661600E13338 /* 联系人.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系人.png"; sourceTree = "<group>"; };
+		CD03D4841C95993E00E13338 /* my1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = my1.png; sourceTree = "<group>"; };
+		CD03D48A1C959A1B00E13338 /* me.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = me.jpg; sourceTree = "<group>"; };
+		CD03D48C1C959BBF00E13338 /* 电话黄页.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "电话黄页.png"; sourceTree = "<group>"; };
+		CD03D48E1C959BCF00E13338 /* 通讯录.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "通讯录.png"; sourceTree = "<group>"; };
+		CD03D4901C95A41700E13338 /* PhoneYellowPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhoneYellowPageViewController.h; sourceTree = "<group>"; };
+		CD03D4911C95A41700E13338 /* PhoneYellowPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhoneYellowPageViewController.m; sourceTree = "<group>"; };
+		CD03D4921C95A41700E13338 /* PhoneYellowPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneYellowPageViewController.xib; sourceTree = "<group>"; };
 		CD3E883F1C91A82A007E44CF /* AddModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddModel.h; sourceTree = "<group>"; };
 		CD3E88401C91A82A007E44CF /* AddModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddModel.m; sourceTree = "<group>"; };
 		CD3E88431C91AD38007E44CF /* add.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = add.plist; sourceTree = "<group>"; };
@@ -301,12 +312,15 @@
 		CD030A571C953B2A0068BF4E /* images */ = {
 			isa = PBXGroup;
 			children = (
+				CD03D48E1C959BCF00E13338 /* 通讯录.png */,
+				CD03D48C1C959BBF00E13338 /* 电话黄页.png */,
+				CD03D48A1C959A1B00E13338 /* me.jpg */,
 				CD03D4821C95661600E13338 /* 联系人.png */,
 				CD03D4801C9564FC00E13338 /* 电话.png */,
 				CD03D4431C954A2F00E13338 /* 动态.png */,
+				CD03D4841C95993E00E13338 /* my1.png */,
 				CD03D43B1C95480C00E13338 /* 消息.png */,
 				CD03D4411C9549C800E13338 /* 联系.png */,
-				CD03D4511C9553DB00E13338 /* me.jpg */,
 				CD030A581C953B4C0068BF4E /* 01.png */,
 				CD3E88451C91B366007E44CF /* icon.png */,
 				CD030A4A1C951F0C0068BF4E /* my.png */,
@@ -380,6 +394,9 @@
 				CD3E88551C91D115007E44CF /* FaceToFaceFastTransformViewController.m */,
 				CD3E88571C91D14C007E44CF /* CollectMoneyViewController.h */,
 				CD3E88581C91D14C007E44CF /* CollectMoneyViewController.m */,
+				CD03D4901C95A41700E13338 /* PhoneYellowPageViewController.h */,
+				CD03D4911C95A41700E13338 /* PhoneYellowPageViewController.m */,
+				CD03D4921C95A41700E13338 /* PhoneYellowPageViewController.xib */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -494,16 +511,20 @@
 				CD030A591C953B4C0068BF4E /* 01.png in Resources */,
 				85FCDFB71C8FE82D000A7627 /* LaunchScreen.storyboard in Resources */,
 				CD03D47B1C9559A000E13338 /* SendMessageViewController.xib in Resources */,
+				CD03D48B1C959A1B00E13338 /* me.jpg in Resources */,
 				CD3E88441C91AD38007E44CF /* add.plist in Resources */,
-				CD03D4521C9553DB00E13338 /* me.jpg in Resources */,
 				CD030A4B1C951F0C0068BF4E /* my.png in Resources */,
 				CD3E88461C91B366007E44CF /* icon.png in Resources */,
 				CD030A521C9521B90068BF4E /* MessageTableViewCell.xib in Resources */,
 				85FCDFB41C8FE82D000A7627 /* Assets.xcassets in Resources */,
 				CD030A4D1C95201D0068BF4E /* 48.png in Resources */,
+				CD03D4941C95A41700E13338 /* PhoneYellowPageViewController.xib in Resources */,
 				CD03D43C1C95480C00E13338 /* 消息.png in Resources */,
+				CD03D48F1C959BCF00E13338 /* 通讯录.png in Resources */,
 				CD03D4381C953BD100E13338 /* Message.plist in Resources */,
 				85FCDFAF1C8FE82D000A7627 /* Main.storyboard in Resources */,
+				CD03D4851C95993E00E13338 /* my1.png in Resources */,
+				CD03D48D1C959BBF00E13338 /* 电话黄页.png in Resources */,
 				85FCDFDB1C8FEB8C000A7627 /* chinaz0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +572,7 @@
 				85FCDFA61C8FE82D000A7627 /* main.m in Sources */,
 				CD3E88591C91D14C007E44CF /* CollectMoneyViewController.m in Sources */,
 				CD03D46E1C95541600E13338 /* MASConstraint.m in Sources */,
+				CD03D4931C95A41700E13338 /* PhoneYellowPageViewController.m in Sources */,
 				CD3E884D1C91D08C007E44CF /* AddFriendViewController.m in Sources */,
 				CD03D4741C95541600E13338 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
 				CD03D47A1C9559A000E13338 /* SendMessageViewController.m in Sources */,
