@@ -46,7 +46,6 @@
     [self scroolToBottom];
     [self updateTime];
     [self initFooterView];
-    //    self.tableView.backgroundColor=[UIColor clearColor];
     [self constraintTableView];
     [self constraintMyKeyBoardViewAndSubViews];
     
@@ -81,8 +80,10 @@
     
 }
 -(void)scroolToBottom{
-    if(!self.marr.count==0){
+    if(self.marr.count>0){
         NSIndexPath *path=[NSIndexPath indexPathForRow:self.marr.count-1 inSection:0];
+        NSLog(@"%d",path.row);
+        
         [self.tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];
     }
     
@@ -228,10 +229,9 @@
     //    [self.myKeyBoardView mas_updateConstraints:^(MASConstraintMaker *make) {
     //        make.bottom.equalTo(self.view.mas_bottom).offset(-270);
     //    }];
-    NSLog(@"1+++");
+  
     //    [self.txtMessage resignFirstResponder];
-    NSLog(@"2+++");
-    
+      
 }
 -(void)writeToFile{
     NSString *path=[NSHomeDirectory() stringByAppendingPathComponent:@"Documents//message.plist"];
@@ -250,7 +250,6 @@
 -(UIView *)myKeyBoardView{
     if(_myKeyBoardView==nil){
         _myKeyBoardView=[UIView new];
-//        _myKeyBoardView.backgroundColor=[UIColor grayColor];
         [self.view addSubview:_myKeyBoardView];
     }
     return _myKeyBoardView;
@@ -271,7 +270,6 @@
 }
 //收起键盘
 -(void)controllClickAction{
-    NSLog(@"1---");
     
     [controll removeFromSuperview];
     controll=nil;
@@ -282,7 +280,7 @@
     [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
         make.height.equalTo(@(APPH-KBOARDH-KTOPLAYOUT_GUIDEH-44));
     }];
-    NSLog(@"2---");
+
     [self.view endEditing:YES];
 }
 -(void)notifiSeting{
@@ -293,24 +291,27 @@
 
 -(void)keyboardWillShow:(NSNotification *)noti{
     CGRect keyboardframe=  [[noti.userInfo objectForKey:UIKeyboardFrameEndUserInfoKey] CGRectValue];
-    CGFloat height=  keyboardframe.size.height;
-    //    更新约束
+    CGFloat keyboardHeight=  keyboardframe.size.height;
+    //    更新输入框约束
     [self.myKeyBoardView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.view.mas_bottom).offset(-height);
+        make.bottom.equalTo(self.view.mas_bottom).offset(-keyboardHeight);
     }];
     
     [self creatControll];
     [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
-        NSLog(@"APPH:%f",APPH);
-        NSLog(@"APPH-height-KBOARDH-KTOPLAYOUT_GUIDEH:%f",APPH-height-KBOARDH-KTOPLAYOUT_GUIDEH);
-        NSLog(@"height:%f",height);
-//        make.height.equalTo(@(APPH-height-KBOARDH-KTOPLAYOUT_GUIDEH-44));
-        make.bottom.equalTo(self.myKeyBoardView.mas_top);
+
+        NSLog(@"height:%f",keyboardHeight);
+        CGFloat tableViewH=APPH-keyboardHeight-KBOARDH-KTOPLAYOUT_GUIDEH-44;
+        make.height.equalTo(@(tableViewH));
+        if(self.marr.count==0){
+            return;
+        }
+        [self scroolToBottom];
+       
+//        make.height.equalTo(@(APPH-keyboardHeight-KBOARDH-KTOPLAYOUT_GUIDEH-44));
+//        make.bottom.equalTo(self.myKeyBoardView.mas_top);
     }];
-    if(self.marr.count==0){
-        return;
-    }
-    [self scroolToBottom];
+    
 }
 -(void)keyboardWillHide:(NSNotification *)noti{
     
