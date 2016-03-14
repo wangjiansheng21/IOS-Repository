@@ -114,7 +114,7 @@
 		CD030A531C95284D0068BF4E /* MessageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModel.h; sourceTree = "<group>"; };
 		CD030A541C95284D0068BF4E /* MessageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModel.m; sourceTree = "<group>"; };
 		CD030A581C953B4C0068BF4E /* 01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 01.png; sourceTree = "<group>"; };
-		CD03D4371C953BD100E13338 /* Message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Message.plist; sourceTree = "<group>"; };
+		CD03D4371C953BD100E13338 /* Message.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Message.plist; path = ../Message.plist; sourceTree = "<group>"; };
 		CD03D43B1C95480C00E13338 /* 消息.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "消息.png"; sourceTree = "<group>"; };
 		CD03D4411C9549C800E13338 /* 联系.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "联系.png"; sourceTree = "<group>"; };
 		CD03D4431C954A2F00E13338 /* 动态.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "动态.png"; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 		CD03D4921C95A41700E13338 /* PhoneYellowPageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhoneYellowPageViewController.xib; sourceTree = "<group>"; };
 		CD3E883F1C91A82A007E44CF /* AddModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddModel.h; sourceTree = "<group>"; };
 		CD3E88401C91A82A007E44CF /* AddModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddModel.m; sourceTree = "<group>"; };
-		CD3E88431C91AD38007E44CF /* add.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = add.plist; sourceTree = "<group>"; };
+		CD3E88431C91AD38007E44CF /* add.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = add.plist; path = ../add.plist; sourceTree = "<group>"; };
 		CD3E88451C91B366007E44CF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		CD3E88481C91CD9B007E44CF /* ScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanViewController.h; sourceTree = "<group>"; };
 		CD3E88491C91CD9B007E44CF /* ScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanViewController.m; sourceTree = "<group>"; };
@@ -240,9 +240,7 @@
 			isa = PBXGroup;
 			children = (
 				CD03D4531C9553FE00E13338 /* masonry */,
-				CD03D4371C953BD100E13338 /* Message.plist */,
 				CD030A571C953B2A0068BF4E /* images */,
-				CD3E88431C91AD38007E44CF /* add.plist */,
 				85FCDFA31C8FE82D000A7627 /* qq */,
 				85FCDFC01C8FE82D000A7627 /* qqTests */,
 				85FCDFCB1C8FE82D000A7627 /* qqUITests */,
@@ -286,6 +284,8 @@
 		85FCDFA41C8FE82D000A7627 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CD03D4371C953BD100E13338 /* Message.plist */,
+				CD3E88431C91AD38007E44CF /* add.plist */,
 				85FCDFA51C8FE82D000A7627 /* main.m */,
 			);
 			name = "Supporting Files";

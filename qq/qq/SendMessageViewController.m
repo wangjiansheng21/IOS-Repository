@@ -53,6 +53,15 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)initView{
+    // 状态栏(statusbar)
+    CGRect rectStatus = [[UIApplication sharedApplication] statusBarFrame];
+    NSLog(@"status width - %f", rectStatus.size.width); // 宽度
+    NSLog(@"status height - %f", rectStatus.size.height);   // 高度
+    
+    // 导航栏（navigationbar）
+    CGRect rectNav = self.navigationBar.frame;
+    NSLog(@"nav width - %f", rectNav.size.width); // 宽度
+    NSLog(@"nav height - %f", rectNav.size.height);   // 高度
     self.navigationBar.barTintColor=[UIColor blueColor];
     self.navigationBar.tintColor=[UIColor whiteColor];
     [self.labName setTextColor:[UIColor whiteColor]];
@@ -150,7 +159,7 @@
     [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.view);
         make.top.equalTo(self.navigationBar.mas_bottom);
-        make.height.equalTo(@(APPH-KTOPLAYOUT_GUIDEH-KBOARDH));
+        make.height.equalTo(@(APPH-KTOPLAYOUT_GUIDEH-KBOARDH-44));
         
     }];
 }
@@ -271,14 +280,14 @@
         make.bottom.equalTo(self.view.mas_bottom);
     }];
     [self.tableView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.equalTo(@(APPH-KBOARDH-KTOPLAYOUT_GUIDEH));
+        make.height.equalTo(@(APPH-KBOARDH-KTOPLAYOUT_GUIDEH-44));
     }];
     NSLog(@"2---");
     [self.view endEditing:YES];
 }
 -(void)notifiSeting{
     [[NSNotificationCenter defaultCenter]addObserver:self selector:@selector(enableBtnSend) name:UITextFieldTextDidChangeNotification object:nil];
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardDidShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
 }
 
@@ -295,7 +304,8 @@
         NSLog(@"APPH:%f",APPH);
         NSLog(@"APPH-height-KBOARDH-KTOPLAYOUT_GUIDEH:%f",APPH-height-KBOARDH-KTOPLAYOUT_GUIDEH);
         NSLog(@"height:%f",height);
-        make.height.equalTo(@(APPH-height-KBOARDH-KTOPLAYOUT_GUIDEH));
+//        make.height.equalTo(@(APPH-height-KBOARDH-KTOPLAYOUT_GUIDEH-44));
+        make.bottom.equalTo(self.myKeyBoardView.mas_top);
     }];
     if(self.marr.count==0){
         return;
